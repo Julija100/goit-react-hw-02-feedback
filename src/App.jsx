@@ -3,7 +3,7 @@ import "./App.css";
 import Statistics from "./components/Statistics/Statistics";
 import Section from "./components/Section/Section";
 import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions';
-
+import Notification from "./components/Notification/Notification";
 
 class App extends Component {
   state = {
@@ -48,24 +48,26 @@ class App extends Component {
         <Section title="Please, leave your feedback! This is important for us!">
           <FeedbackOptions
             options={this.getOptionsValues()}
-            onLeaveFeedback={this.onLeaveFeedback()}
+            onLeaveFeedback={this.onLeaveFeedback}
           ></FeedbackOptions>
         </Section>
 
         <Section title="STATISTICS">
-          <Statistics
-            good={good}
-            neutral={neutral}
-            bad={bad}
-            total={this.countTotalFeedback()}
-            positiveFeedback={this.countPositiveFeedbackPercentage()}
-          ></Statistics>
+          {this.countTotalFeedback() > 0 ? (
+            <Statistics
+              good={good}
+              neutral={neutral}
+              bad={bad}
+              total={this.countTotalFeedback()}
+              positiveFeedback={this.countPositiveFeedbackPercentage()}
+            ></Statistics>
+          ) : (
+            <Notification message="No feedback given"></Notification>
+          )}
         </Section>
       </>
     );
   }
 }
-
-
 
 export default App;
