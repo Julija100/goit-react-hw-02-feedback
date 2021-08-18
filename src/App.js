@@ -1,5 +1,7 @@
 import { render } from "@testing-library/react";
 import "./App.css";
+import Statistics from "./components/Statistics/Statistics";
+
 
 class App extends Component {
   state = {
@@ -40,9 +42,13 @@ render() {
   const { good, neutral, bad } = this.state;
   return (
     <h1> Our visitors feedback</h1>
-    <div>
-      <FeedbackOptions></FeedbackOptions>
-    </div>
+   <Statistics>
+      good ={good}
+      neutral= {neutral}
+      bad={bad}
+      total={countTotalFeedback()}
+      positiveFeedback= {countPositiveFeedbackPercentage()}
+   </Statistics>
   )
 }
 
