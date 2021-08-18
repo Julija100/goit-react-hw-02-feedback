@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Julija100/goit-react-hw-02-feedback/static/css/main.45785855.chunk.css",
+    "main.js": "/Julija100/goit-react-hw-02-feedback/static/js/main.5c88f96c.chunk.js",
+    "main.js.map": "/Julija100/goit-react-hw-02-feedback/static/js/main.5c88f96c.chunk.js.map",
+    "runtime-main.js": "/Julija100/goit-react-hw-02-feedback/static/js/runtime-main.b2894d5b.js",
+    "runtime-main.js.map": "/Julija100/goit-react-hw-02-feedback/static/js/runtime-main.b2894d5b.js.map",
+    "static/js/2.f0e4ac66.chunk.js": "/Julija100/goit-react-hw-02-feedback/static/js/2.f0e4ac66.chunk.js",
+    "static/js/2.f0e4ac66.chunk.js.map": "/Julija100/goit-react-hw-02-feedback/static/js/2.f0e4ac66.chunk.js.map",
+    "index.html": "/Julija100/goit-react-hw-02-feedback/index.html",
+    "static/css/main.45785855.chunk.css.map": "/Julija100/goit-react-hw-02-feedback/static/css/main.45785855.chunk.css.map",
+    "static/js/2.f0e4ac66.chunk.js.LICENSE.txt": "/Julija100/goit-react-hw-02-feedback/static/js/2.f0e4ac66.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2894d5b.js",
+    "static/js/2.f0e4ac66.chunk.js",
+    "static/css/main.45785855.chunk.css",
+    "static/js/main.5c88f96c.chunk.js"
+  ]
+}
